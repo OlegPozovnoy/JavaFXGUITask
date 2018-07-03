@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.String?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ColorPicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.text.Font?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="528.0" prefWidth="660.0" style="-fx-border-color: BLACK; -fx-border-width: 7;" styleClass="mainpaneclass" stylesheets="@main.css" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="assignmentgui.FXML_GUIMainController">
+   <children>
+      <Label fx:id="lblHeader" alignment="CENTER" layoutX="90.0" layoutY="30.0" prefHeight="43.0" prefWidth="499.0" style="-fx-border-color: BLACK; -fx-border-width: 3;" text="TEACHER">
+         <font>
+            <Font name="Times New Roman" size="24.0" />
+         </font>
+         <styleClass>
+            <String fx:value="textLabel" />
+            <String fx:value="textHeader" />
+         </styleClass>
+      </Label>
+      <Label id="errMsg" fx:id="lblErr" layoutX="92.0" layoutY="345.0" prefHeight="33.0" prefWidth="499.0" textFill="RED">
+         <font>
+            <Font size="18.0" />
+         </font></Label>
+      <Label fx:id="lblStudentName" layoutX="104.0" layoutY="412.0" styleClass="textLabel" text="Student Name:" />
+      <TextField fx:id="txtStudentName" layoutX="230.0" layoutY="408.0" />
+      <Label fx:id="lblColor" layoutX="104.0" layoutY="445.0" styleClass="textLabel" text="Student Color:" />
+      <Button fx:id="btnAddStudent" layoutX="270.0" layoutY="481.0" mnemonicParsing="false" onAction="#letsTestThisShit" text="AddStudent" />
+      <GridPane fx:id="grdPane" gridLinesVisible="true" layoutX="90.0" layoutY="91.0" prefHeight="248.0" prefWidth="499.0" style="-fx-background-color: WHITE;">
+        <columnConstraints>
+          <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+          <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+        </columnConstraints>
+        <rowConstraints>
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+        </rowConstraints>
+         <children>
+            <Label fx:id="lblStudentName_0_0" alignment="CENTER" maxWidth="1.7976931348623157E308" styleClass="labelclass" textAlignment="CENTER" textFill="WHITE" GridPane.halignment="CENTER" GridPane.valignment="BOTTOM" />
+            <Label fx:id="lblStudentName_0_1" maxWidth="1.7976931348623157E308" styleClass="labelclass" textAlignment="CENTER" textFill="WHITE" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.valignment="BOTTOM" />
+            <Label fx:id="lblStudentName_0_12" maxWidth="1.7976931348623157E308" style="-fx-alignment: bottom-center;" styleClass="labelclass" textAlignment="CENTER" textFill="WHITE" GridPane.columnIndex="2" GridPane.valignment="BOTTOM" />
+            <Label maxWidth="1.7976931348623157E308" styleClass="labelclass" textAlignment="CENTER" textFill="WHITE" GridPane.halignment="CENTER" GridPane.rowIndex="1" GridPane.valignment="BOTTOM" />
+            <Label maxWidth="1.7976931348623157E308" styleClass="labelclass" textAlignment="CENTER" textFill="WHITE" GridPane.columnIndex="1" GridPane.rowIndex="1" GridPane.valignment="BOTTOM" />
+            <Label maxWidth="1.7976931348623157E308" styleClass="labelclass" textAlignment="CENTER" textFill="WHITE" GridPane.columnIndex="2" GridPane.halignment="CENTER" GridPane.rowIndex="1" GridPane.valignment="BOTTOM" />
+            <Label maxWidth="1.7976931348623157E308" styleClass="labelclass" textAlignment="CENTER" GridPane.halignment="CENTER" GridPane.rowIndex="2" GridPane.valignment="BOTTOM" />
+            <Label maxWidth="1.7976931348623157E308" styleClass="labelclass" textAlignment="CENTER" textFill="WHITE" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.rowIndex="2" GridPane.valignment="BOTTOM" />
+            <Label maxWidth="1.7976931348623157E308" minWidth="-Infinity" styleClass="labelclass" textAlignment="CENTER" textFill="WHITE" GridPane.columnIndex="2" GridPane.halignment="CENTER" GridPane.rowIndex="2" GridPane.valignment="BOTTOM" />
+            <Pane maxHeight="67.0" prefHeight="200.0" prefWidth="200.0" styleClass="paneclass" GridPane.valignment="TOP" />
+            <Pane prefHeight="200.0" prefWidth="200.0" styleClass="paneclass" GridPane.columnIndex="1" GridPane.valignment="TOP" />
+            <Pane prefHeight="200.0" prefWidth="200.0" styleClass="paneclass" GridPane.columnIndex="2" GridPane.valignment="TOP" />
+            <Pane prefHeight="200.0" prefWidth="200.0" styleClass="paneclass" GridPane.rowIndex="1" GridPane.valignment="TOP" />
+            <Pane prefHeight="200.0" prefWidth="200.0" styleClass="paneclass" GridPane.columnIndex="1" GridPane.rowIndex="1" GridPane.valignment="TOP" />
+            <Pane prefHeight="200.0" prefWidth="200.0" styleClass="paneclass" GridPane.columnIndex="2" GridPane.rowIndex="1" GridPane.valignment="TOP" />
+            <Pane prefHeight="200.0" prefWidth="200.0" styleClass="paneclass" GridPane.rowIndex="2" GridPane.valignment="TOP" />
+            <Pane prefHeight="200.0" prefWidth="200.0" styleClass="paneclass" GridPane.columnIndex="1" GridPane.rowIndex="2" GridPane.valignment="TOP" />
+            <Pane prefHeight="200.0" prefWidth="200.0" styleClass="paneclass" GridPane.columnIndex="2" GridPane.rowIndex="2" GridPane.valignment="TOP" />
+         </children>
+      </GridPane>
+      <ColorPicker fx:id="clrPicker" layoutX="230.0" layoutY="441.0" />
+   </children>
+</Pane>
