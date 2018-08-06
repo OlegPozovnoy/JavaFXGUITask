@@ -6,6 +6,7 @@
 package calculator;
 
 import java.net.URL;
+import java.util.HashSet;
 import java.util.ResourceBundle;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
@@ -98,14 +99,18 @@ public class FXMLDocumentController implements Initializable {
                 }
             else
             {
-            calc.doOperation(next.getText(), labelResult.getText());
-            labelErr.setText(calc.getError());
-            labelResult.setText(Double.toString(calc.getArg1()));
-            if (calc.getError().length()>=0)
+                if (newStr == false)
                 {
-                    newStr = true;
+                    calc.doOperation(next.getText(), labelResult.getText());
+                    labelErr.setText(calc.getError());
+                    labelResult.setText(Double.toString(calc.getArg1()));
+                }
+                else
+                {
+                    calc.setOperator(next.getText());                  
                 }
             }
+            newStr = true;
         }
         else
         {

@@ -9,7 +9,7 @@
 <?import javafx.scene.layout.GridPane?>
 <?import javafx.scene.layout.RowConstraints?>
 
-<TitledPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="580.0" prefWidth="600.0" stylesheets="@calc.css" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="calculator.FXMLDocumentController">
+<TitledPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="580.0" prefWidth="600.0" stylesheets="@calc.css" text="Calculator" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="calculator.FXMLDocumentController">
    <content>
     <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="510.0" prefWidth="598.0" style="-fx-background-color: black;">
          <children>
@@ -29,7 +29,7 @@
                <children>
                   <Button fx:id="num8" mnemonicParsing="false" onAction="#handleButtonAction" onMouseClicked="#handleButtonAction" prefHeight="103.0" prefWidth="150.0" styleClass="buttonNum" stylesheets="@calc.css" text="8" GridPane.columnIndex="1" />
                   <Button fx:id="num9" mnemonicParsing="false" onAction="#handleButtonAction" onMouseClicked="#handleButtonAction" prefHeight="114.0" prefWidth="244.0" styleClass="buttonNum" text="9" GridPane.columnIndex="2" />
-                  <Button id="topright" fx:id="operMult" mnemonicParsing="false" onAction="#handleButtonAction" onMouseClicked="#handleButtonAction" prefHeight="121.0" prefWidth="254.0" style="-fx-border-radius: 0 30 0 0; -fx-background-radius: 0 30 0 0;" styleClass="buttonOper" text="x" GridPane.columnIndex="3" />
+                  <Button id="topright" fx:id="operMult" mnemonicParsing="false" onAction="#handleButtonAction" onMouseClicked="#handleButtonAction" prefHeight="121.0" prefWidth="254.0" styleClass="buttonOper" text="x" GridPane.columnIndex="3" />
                   <Button fx:id="num4" mnemonicParsing="false" onAction="#handleButtonAction" onMouseClicked="#handleButtonAction" prefHeight="132.0" prefWidth="302.0" styleClass="buttonNum" text="4" GridPane.rowIndex="1" />
                   <Button fx:id="num5" mnemonicParsing="false" onAction="#handleButtonAction" onMouseClicked="#handleButtonAction" prefHeight="119.0" prefWidth="253.0" styleClass="buttonNum" text="5" GridPane.columnIndex="1" GridPane.rowIndex="1" />
                   <Button fx:id="num6" mnemonicParsing="false" onAction="#handleButtonAction" onMouseClicked="#handleButtonAction" prefHeight="98.0" prefWidth="284.0" styleClass="buttonNum" text="6" GridPane.columnIndex="2" GridPane.rowIndex="1" />
@@ -42,7 +42,7 @@
                   <Button fx:id="numdot" mnemonicParsing="false" onAction="#handleButtonAction" onMouseClicked="#handleButtonAction" prefHeight="142.0" prefWidth="353.0" styleClass="buttonNum" text="." GridPane.columnIndex="1" GridPane.rowIndex="3" />
                   <Button fx:id="operEq" mnemonicParsing="false" onAction="#handleButtonAction" onMouseClicked="#handleButtonAction" prefHeight="134.0" prefWidth="361.0" styleClass="buttonEqual" text="=" GridPane.columnIndex="2" GridPane.rowIndex="3" />
                   <Button id="bottomright" fx:id="operPlus" mnemonicParsing="false" onAction="#handleButtonAction" onMouseClicked="#handleButtonAction" prefHeight="116.0" prefWidth="284.0" styleClass="buttonOper" text="+" GridPane.columnIndex="3" GridPane.rowIndex="3" />
-                  <Button id="topleft" fx:id="num51" mnemonicParsing="false" onAction="#handleButtonAction" onMouseClicked="#handleButtonAction" prefHeight="119.0" prefWidth="253.0" style="-fx-border-radius: 30 0 0 0; -fx-background-radius: 30 0 0 0;" styleClass="buttonNum" text="7" />
+                  <Button id="topleft" fx:id="num51" mnemonicParsing="false" onAction="#handleButtonAction" onMouseClicked="#handleButtonAction" prefHeight="88.0" prefWidth="150.0" styleClass="buttonNum" text="7" />
                </children>
             </GridPane>
             <Label fx:id="labelResult" contentDisplay="CENTER" layoutX="15.0" layoutY="98.0" prefHeight="72.0" prefWidth="558.0" styleClass="labelResult" text="0" AnchorPane.leftAnchor="25.0" AnchorPane.rightAnchor="25.0">
