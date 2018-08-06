@@ -1,3 +1,1 @@
-Small JavaFX assignment
-
-Requirements are in GUI Assigment.pdf
+JavaFX Projects COMP1008
