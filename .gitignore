@@ -4,7 +4,7 @@
 *.com
 *.class
 *.dll
-*.exe
+#*.exe
 *.pdb
 *.dll.config
 *.cache
@@ -44,7 +44,7 @@ TestResults/
 *.dmg
 *.gz
 *.iso
-*.jar
+#*.jar
 *.rar
 *.tar
 *.zip
@@ -69,7 +69,7 @@ Thumbs.db
 packages
 NuGet.exe
 _[Ss]cripts
-*.exe
+#*.exe
 *.dll
 *.nupkg
 *.ncrunchsolution
