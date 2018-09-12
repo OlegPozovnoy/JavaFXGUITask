@@ -1,0 +1,61 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : Jun 27, 2018, 1:27:25 PM
+    Author     : Oleg
+*/
+
+.mainpaneclass{
+ -fx-border-color: black;
+ /*-fx-border-radius:20;
+ -fx-background-radius: 20;*/
+ -fx-border-width:7;
+    
+}
+
+.labelclass {
+    
+    -fx-background-color: black;
+    -fx-alignment: bottom-center;
+    -fx-text-fill:white;
+} 
+
+.paneclass {
+    -fx-max-height: 66;
+
+    
+}
+
+.mainpaneclass{
+   -fx-background-color: linear-gradient(#ff8080,#cc0000); /*grey;*/ 
+}
+
+.textLabel{
+    -fx-text-fill:WHITE;
+    -fx-font-family: "Times New Roman";
+    -fx-font-size:16;
+}
+
+.textHeader{
+    -fx-background-color: white;    
+    -fx-text-fill:red; 
+    -fx-font-size:24;
+    -fx-font-family: "Times New Roman";
+}
+
+.button {
+    -fx-font-weight: bold;
+    -fx-text-fill:white;
+    -fx-font-family: "Times New Roman";
+    -fx-background-color: linear-gradient(#8c8c8c,#333333);
+    
+}
+
+
+#errMsg{
+    
+    -fx-text-fill: #ffff4d;    
+}
